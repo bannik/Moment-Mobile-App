@@ -105,6 +105,7 @@ try{
 		                            
 		                        	function showError(msg){
 		                        		weather.addClass('error').html(msg);
+		                        		  bugsense.notify( msg, { rotation: 'not supported' } );
 		                        	}
 		                        
 		                        });
