@@ -1,4 +1,5 @@
-$(function(){
+try{
+	$(function(){
 	
 	/* Configuration */
 	
@@ -107,4 +108,7 @@ $(function(){
 		                        	}
 		                        
 		                        });
-		                        
+		                        }
+		                        catch ( error ) { 
+		                           bugsense.notify( error, { rotation: 'not supported' } ) 
+		                        };
